@@ -1,0 +1,29 @@
+// Programme division
+
+#include <stdio.h>
+
+void main ()
+ {
+  int nbArticles;
+
+  printf ("Donnez le nombre d'articles : ");
+
+  scanf ("%d", &nbArticles);
+
+  switch (nbArticles)
+   {
+    case 0  : printf ("Il n'y a aucune article\n");
+              break;
+
+    case 1  : printf ("Il y a un article\n");
+              break;
+
+    default : if (nbArticles>0)
+                    {
+                     printf ("Il y a %d articles\n", nbArticles);
+                    }
+               else {
+                     printf ("La valeur est erronée !!\n");
+                    }
+   }
+ }
